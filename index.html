@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>DIC cafe</title>
+    <meta charset="utf-8">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header_nav">
+      <nav class="header_nav">
+        <a href="./index.html" class="logo"><img src="./images/sample_logo_k.png" alt="logo"></a>
+        <ul class="global_nav">
+          <a href="./index.html" class="global_nav_item"><li>Home</li></a>
+          <a href="#menu" class="global_nav_item"><li>Menu</li></a>
+          <a href="#contact" class="global_nav_item"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <section class="section_inner_title">
+      <div class="section_title">
+        <h1>Venta de granos de café</h1>
+      </div>
+    </section>
+
+    <section class="section_inner menu_section">
+      <div class="center">
+        <h1 class="menu_title">Coffee menu</h1>
+      </div>
+      <ul class="menu_ul coffee_menu">
+        <li class="menu_li">
+          <div class="menu_li_cont">
+            <h2 class="menu_li_title">Mezcla original 200g</h2>
+            <p>¥500</p>
+          </div>
+          <img src="./images/sample_cafe1.jpg" class="coffee_menu_image">
+        </li>
+        <li class="menu_li">
+          <div class="menu_li_cont">
+            <h2 class="menu_li_title">Mezcla original 500g</h2>
+            <p>¥900</p>
+          </div>
+          <img src="./images/sample_cafe1.jpg" class="coffee_menu_image">
+        </li>
+        <li class="menu_li">
+          <div class="menu_li_cont">
+            <h2 class="menu_li_title">Mezcla especial 200g</h2>
+            <p>¥700</p>
+          </div>
+          <img src="./images/sample_cafe3.jpg" class="coffee_menu_image">
+        </li>
+        <li class="menu_li">
+          <div class="menu_li_cont">
+            <h2 class="menu_li_title">Mezcla especial 500g</h2>
+            <p>¥1200</p>
+          </div>
+          <img src="./images/sample_cafe3.jpg" class="coffee_menu_image">
+        </li>
+      </ul>
+      <h2>Información de envío</h2>
+      <ul>
+        <li>・La tarifa de envío es de 500 yenes si el monto total es inferior a 2000 yenes</li>
+        <li>・250 yenes para pedidos superiores a 2000 yenes</li>
+        <li>・Gratis para pedidos superiores a 3000 yenes</li>
+      </ul>
+    </section>
+
+    <section class="section_inner">
+      <h2>Orden</h2>
+      <form>
+        <p>Seleccione un producto</p>
+        <div>
+          <select id="producto" required>
+            <option hidden value="0">Por favor seleccione</option>
+            <option value="1">Mezcla original 200g 500 yenes</option>
+            <option value="2">Mezcla original 500g 900 yenes</option>
+            <option value="3">Mezcla especial 200g 700 yenes</option>
+            <option value="4">Mezcla especial 500g 1200 yenes</option>
+          </select>
+          <p>Por favor seleccione cantidad</p>
+          <input type="number" min="1" max="5" id="cantidad" required>
+        </div>
+        <br>
+        <input type="button" class="btn" value="Agregar" onclick="add()">
+        <input type="button" class="btn" value="Cantidad Total" onclick="total()">
+      </form>
+    </section>
+    <script type="text/javascript" src="./program.js"></script>
+    <footer class="footer">
+      <nav>
+        <ul class="footer_ul">
+          <a class="footer_li" href="index.html"><li>• Home</li></a>
+          <a class="footer_li" href="./images/sample_cafe1.jpg"><li>•Menu</li></a>
+          <a class="footer_li" href="contact.html"><li>•Contact</li></a>
+          <a class="footer_li" href="contact.html"><li><img src="./images/sample_logo_w.png" alt="" width="80px"></li>
+          </a>
+        </ul>
+        <div class="derechos">
+          <span>© DIVE INTO CODE Corp. All RIGHTS RESERVED.</span>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
